@@ -11,6 +11,10 @@ class Robot(object):
     print('%s Robot is working' %self.type)
   @work.setter
   def set_work(self,value):  
+     pass
+  @work.deleter
+  def del_work(self):
+    pass
     
   def destroy(self):
     print('%s Robot is being destoryed !'%self.type)
