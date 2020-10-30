@@ -5,10 +5,13 @@ class Robot(object):
     Robot.num += 1
     print('Initializing {0} {1}'.format(self.type,Robot.num))
 
+  @property
   def work(self):
     "simulated robot is working,wear and tear"
     print('%s Robot is working' %self.type)
-
+  @work.setter
+  def set_work(self,value):  
+    
   def destroy(self):
     print('%s Robot is being destoryed !'%self.type)
     Robot.num -= 1
@@ -20,7 +23,9 @@ class Robot(object):
   @classmethod
   def print_num(cls):
     print("There are %d robots"%cls.num)
-
+  @staticmethod
+  def print():
+     print('xxxx')
 
 class Sweepor(Robot):
   def __init__(self,type,age,expect):
