@@ -1,0 +1,22 @@
+dingding_chat_api:
+
+grafana_auth:
+grafana_api:
+
+email_notification:
+  - "test@a.com"
+
+smtp_server:
+# here is the smtp server's account
+  user_name:
+  password:
+  smtp_addr:
+# if start time equal end time,then the emailer not work.
+  start_time: 23
+  end_time: 12
+
+alert_log_file: "/var/log/gng.log" # logging the  PRD logs.
+client_log_file: "/mnt/rt_client/is.log"
+
+stats_check: True
+dingding_sender: True
